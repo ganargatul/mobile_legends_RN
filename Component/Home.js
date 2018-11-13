@@ -1,13 +1,13 @@
 import React,{Component} from 'react';
 import{Container,Content,Text, Thumbnail,H3,Button} from 'native-base';
 import {StyleSheet} from 'react-native';
-import Heroes from './Heroes';
+import Hero from './Heroes';
+import screen from '../screens/index'
 import { createStackNavigator } from 'react-navigation';
 class Home extends Component{
     /**static navigationOptions = {
         header: null
       }*/
-    
     render(){
         return(
             <Container style={styles.conte}>
@@ -37,7 +37,7 @@ class Home extends Component{
 const RootStack = createStackNavigator(
     {
       Home: Home,
-      Heroes: Heroes,
+      Heroes: Hero,
     },
     {
       initialRouteName: 'Home',
